@@ -2,9 +2,9 @@ import 'package:flutter/material.dart';
 import 'package:horizontal_data_table/horizontal_data_table.dart';
 import 'package:myapp/base/constant.dart';
 
-void main() => runApp(MyApp());
+void main() => runApp(MyTable());
 
-class MyApp extends StatelessWidget {
+class MyTable extends StatelessWidget {
   // This widget is the root of your application.
   @override
   Widget build(BuildContext context) {
@@ -43,9 +43,6 @@ class _MyHomePageState extends State<MyHomePage> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      appBar: AppBar(
-        title: Text(widget.title),
-      ),
       body: _getBodyWidget(),
     );
   }
